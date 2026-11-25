@@ -1,0 +1,22 @@
+[
+  {
+    "pregunta": "¿Cuántas dimensiones tiene por defecto un embedding de text-embedding-3-small y qué debe coincidir en el índice?",
+    "documento_id_esperado": "embeddings"
+  },
+  {
+    "pregunta": "¿Qué metadatos se guardan por vector y para qué se usan los namespaces?",
+    "documento_id_esperado": "pinecone-serverless"
+  },
+  {
+    "pregunta": "¿Cómo se combinan BM25 y búsqueda vectorial y qué significa RRF?",
+    "documento_id_esperado": "recuperacion-hibrida"
+  },
+  {
+    "pregunta": "¿Qué tamaño y solapamiento de tokens se usan y qué pasa con PDFs escaneados?",
+    "documento_id_esperado": "chunking-metadata"
+  },
+  {
+    "pregunta": "¿Cómo se calculan Precision@5 y Recall@5 en el benchmark?",
+    "documento_id_esperado": "evaluacion-retrieval"
+  }
+]

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-pinecone-hybrid"
+version = "0.1.0"
+description = "Pipeline de ingesta y recuperación híbrida BM25 + Pinecone."
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0,<2.0",
+    "langchain-classic>=1.0,<2.0",
+    "langchain-community>=0.4,<1.0",
+    "langchain-core>=1.0,<2.0",
+    "langchain-openai>=1.0,<2.0",
+    "langchain-pinecone>=0.2,<1.0",
+    "langchain-text-splitters>=1.0,<2.0",
+    "pinecone>=7.3,<8.0",
+    "pydantic>=2.7,<3.0",
+    "python-dotenv>=1.0,<2.0",
+    "pypdf>=5.0,<7.0",
+    "pyyaml>=6.0,<7.0",
+    "rank-bm25>=0.2.2,<1.0",
+    "tiktoken>=0.8,<1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0,<9.0"]
+
+[tool.setuptools]
+py-modules = ["config", "documents", "index", "ingest", "metrics", "retriever"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
